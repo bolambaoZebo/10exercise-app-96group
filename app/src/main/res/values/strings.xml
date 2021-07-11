@@ -1,93 +1,99 @@
 <resources>
     <string name="app_name">ExerciseTips</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
 
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
-    </string>
     <string name="action_settings">Settings</string>
+
+    <string name="content1">
+        "The wall push-up is an effective variation on the military-esque traditional push-up-which is an advanced movement,"
+        "according to Alena Luciani, strength and conditioning specialist and founder of Training2xl."
+
+        "\n \n How to do it \n \n"
+
+        "Stand an arm's length away from the wall."
+        "Lean forward, planting both palms on the wall so they're shoulder-width apart."
+        "“Think about spreading the wall with your fingers to activate your triceps and lats properly position your elbows,” says Luciani."
+        "Simultaneously squeeze your midline, quads, and glutes."
+        "Shoot elbows straight behind you as you lower until your forehead kisses the wall."
+        "Press away."
+    </string>
+    <string name="content2">
+        "Known as the Superman before the ~ gender revolution ~, the superhuman is a super-duper pulling exercise.\n\n"
+
+        "It's incredibly important to do some pulling exercises in your workout routine, says Luciani.\n\n"
+
+        "Most of our day-to-day to-dos, like camping out on the computer and lounging on the lounger, neglect our pulling muscles (back, forearms, traps), which increases the risk of muscle imbalances and, eventually, injury.
+        \n\n"
+        "How to do it\n \n"
+        "Hold the towel tight between your hands, with arms extended shoulder-width apart."
+        "Brace your midline by drawing your rib cage down toward the floor while sucking your belly button back toward your spine."
+        "With straight arms, bring the towel over your right shoulder. (Imagine holding the end of a long oar.)"
+        "Pull the towel down at a 45-degree angle toward your left hip (as if you're plunging the oar into the water)."
+        "Return your hands overhead and repeat the movement for 45 seconds, then repeat on the opposite side."
+        "If you have a resistance band and want to make the movement harder, replace the towel with the band.\n\n"
+
+        "“The added resistance will make the movement harder, so you may want to do 10 reps instead of for time,” says Philadelphia-based trainer Mike Watkins, founder of Festive Fitness, which offers QTPOC- and LGBT+-inclusive personal training and group fitness classes."
+    </string>
+
+
+    <string name="content3">
+       "You know this one. This tried-and-true strength-building move is sure to get your heart rate up in no time.\n\n"
+
+       "Watkins recommends the reverse lunge for beginners instead of the forward lunge because, while still effective at building unilateral glute, quad, hamstring, and calf strength, stepping backward requires less balance and stability than stepping forward. ” In other words, it’s easier.\n\n"
+
+        "How to do it\n \n"
+        "Stand and lock in your belly. Take a big enough step back."
+        "Bend both your front and your back knee to a 90-degree angle."
+        "With straight arms, bring the towel over your right shoulder. (Imagine holding the end of a long oar.)"
+        "Step feet back together. Repeat the movement on the other side.\n \n"
+        "Continue alternating legs for 45 seconds. Do 4 sets, resting for 15 seconds after each set, Watkins recommends."
+    </string>
+
+    <string name="content4">
+        "Mastered the reverse lunge? Congrats! Time to advance to the split squat, the reverse lunge's feistier cousin.\n\n"
+
+        "Split squats work the same muscles as lunges (quads, glutes, calves, core, hamstrings). But because split squats require getting into a lunge position and moving within that position (unlike reverse lunges, which involve dynamically moving into and out of the position), they work the muscles to a greater range of motion, according to Luciani.\n\n"
+        "There are a few variations of the split squat, but Luciani recommends starting with the equipment-free bodyweight version.\n\n"
+
+        "How to do it\n\n"
+        "Stand with feet under hips. Take a big step back and descend until front and back knees are both bent at a 90-degree angle."
+        "Keeping your feet where they are, straighten both legs. Repeat this movement for 12–16 reps."
+        "Switch lead legs and do the same thing on the other side.\n"
+        "If that feels easy-peasy, head over to a chair you don't mind putting your tootsie-toes on. Repeat the steps above, but this time, reach your foot back so the laces of your shoe rest on the seat of the chair."
+        ""Elevating your back leg is a less stable position, which means your core has to work extra hard to keep you upright," says Luciani."
+    </string>
+
+    <string name="content5">
+        "The only exercise that might (might!) Beat out the dead bug as most poorly named movement is the snatch. But while its moniker is morbid, the dead bug movement itself does some serious #werk on your midsection.\n\n"
+
+        "“The dead bug is one of the most effective body weight exercises for strengthening the core and pelvic floor muscle,” says Watkins. "Because strengthening your core is one of the best ways to reduce lower back pain, the dead bug is an especially great option for anyone dealing with lower back pain."\n\n"
+        "There are a few variations of the split squat, but Luciani recommends starting with the equipment-free body weight version.\n\n"
+
+        "How to do it\n \n"
+        "Lie face-up with knees bent in the air at a 90-degree angle and arms straight overhead so they're perpendicular to the floor."
+        "Draw belly button down to engage core."
+        "“Keeping your core tight, slowly bring one arm overhead while straightening the opposite leg,” says Watkins."
+        "When your arm and leg are hovering 1–3 inches above the floor, pause for 2 seconds."
+        "Return to the starting position and repeat on the opposite side."
+    </string>
+
+    <string name="content6">
+        "Quick: Picture a banana on a table. Got it? Great - you've basically got the gist of the hollow hold.\n\n"
+        "But don't let the fruit reference fool you. This movement gets spicy QUICK. It's super good for strengthening your midsection.\n\n"
+
+        "Because you're holding your muscles in a contracted position, there's greater time under tension, which leads to greater muscle gains, says Luciani.\n\n"
+        "How to do it\n \n"
+        "Lie face-up with legs extended and arms straight overhead."
+        "Press your lower back into the floor and raise arms and legs 6–12 inches off the floor."
+        "Chillax there for 30 seconds."
+        "Take a 15-second break before holding for another 30 seconds."
+        "Do 4 sets.\n\n"
+
+        "Take lots of breaks and don't forget to hydrate\n\n"
+
+        "This advice is good for folks of all fitness levels: Your body isn't a machine - it needs downtime to repair and recover. If you're just getting into the swing of things, you may need a whole rest day between workouts. And any time you're sweating, remember to replenish your hydration with water and electrolytes."
+    </string>
+    <string name="title_activity_exercise_detail">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

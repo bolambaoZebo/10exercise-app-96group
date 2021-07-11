@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="array_image">
+        <item>@drawable/img2</item>
+        <item>@drawable/img3</item>
+        <item>@drawable/img4</item>
+        <item>@drawable/img5</item>
+        <item>@drawable/img6</item>
+        <item>@drawable/img7</item>
+    </integer-array>
+
+    <string-array name="array_content">
+        <item>@string/content1</item>
+        <item>@string/content2</item>
+        <item>@string/content3</item>
+        <item>@string/content4</item>
+        <item>@string/content5</item>
+        <item>@string/content6</item>
+
+    </string-array>
+
+    <integer-array name="array_contentimage">
+        <item>@drawable/img8</item>
+        <item>@drawable/img13</item>
+        <item>@drawable/img9</item>
+        <item>@drawable/img11</item>
+        <item>@drawable/img10</item>
+        <item>@drawable/img12</item>
+    </integer-array>
+
+
+</resources>
