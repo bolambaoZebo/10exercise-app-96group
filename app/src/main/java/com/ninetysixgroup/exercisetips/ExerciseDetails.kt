@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_exercise_details.*
 import kotlinx.android.synthetic.main.popup_dialog.*
+import java.util.*
 
 class ExerciseDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,22 +23,22 @@ class ExerciseDetails : AppCompatActivity() {
 
         detailText.setText(content)
         imageView2.setImageResource(imageContent)
-//        imageView.setImageResource(imageContent)
         popupAds()
     }
 
     private fun popupAds(){
-        val url = "https://88probett.com"
+        val url = "https://88proasia.com"
         val openURL = Intent(Intent.ACTION_VIEW)
         openURL.data = Uri.parse(url)
+
+        val random = Random()
+        val imgs = getResources().obtainTypedArray(R.array.pop_random_);
 
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.popup_dialog)
         dialog.setCancelable(false)
         dialog.window?.setBackgroundDrawableResource(R.drawable.dialog_background)
-       // dialog.getWindow()?.setBackgroundDrawableResource(R.drawable.dialog_background);
-
-//        val image: ImageView = dialog.findViewById(R.id.img_exit)
+        dialog.background.background = resources.getDrawable(imgs.getResourceId(random.nextInt(3), -1))
 
         dialog.img_exit.setOnClickListener{
             dialog.dismiss()

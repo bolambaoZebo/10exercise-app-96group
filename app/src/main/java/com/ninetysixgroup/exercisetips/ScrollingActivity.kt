@@ -1,5 +1,6 @@
 package com.ninetysixgroup.exercisetips
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -14,6 +15,9 @@ import com.ninetysixgroup.exercisetips.databinding.ActivityScrollingBinding
 import com.ninetysixgroup.model.WorkOutModel
 import kotlinx.android.synthetic.main.activity_scrolling.*
 import kotlinx.android.synthetic.main.content_scrolling.*
+import kotlinx.android.synthetic.main.popup_dialog.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class ScrollingActivity : AppCompatActivity(), RecyclerAdapter.onItemClicked {
 
@@ -27,14 +31,13 @@ class ScrollingActivity : AppCompatActivity(), RecyclerAdapter.onItemClicked {
         setSupportActionBar(findViewById(R.id.toolbar))
         binding.toolbarLayout.title = ""
 
-        val url = "https://88probett.com"
+        popupAds()
+        val url = "https://88proasia.com"
         val openURL = Intent(android.content.Intent.ACTION_VIEW)
         openURL.data = Uri.parse(url)
 
         binding.fab.setOnClickListener { view ->
             startActivity(openURL)
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
         }
 
         home_recycler.layoutManager = GridLayoutManager(
@@ -46,6 +49,31 @@ class ScrollingActivity : AppCompatActivity(), RecyclerAdapter.onItemClicked {
         home_recycler.adapter = RecyclerAdapter(this,getAllRacing(), this)
 
 
+    }
+
+    private fun popupAds(){
+        val url = "https://88proasia.com"
+        val openURL = Intent(Intent.ACTION_VIEW)
+        openURL.data = Uri.parse(url)
+
+        val random = Random()
+        val imgs = getResources().obtainTypedArray(R.array.pop_random_);
+
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.popup_dialog)
+        dialog.setCancelable(false)
+        dialog.window?.setBackgroundDrawableResource(R.drawable.dialog_background)
+        dialog.background.background = resources.getDrawable(imgs.getResourceId(random.nextInt(3), -1))
+
+        dialog.img_exit.setOnClickListener{
+            dialog.dismiss()
+        }
+
+        dialog.btn_clickhere.setOnClickListener{
+            startActivity(openURL)
+        }
+
+        dialog.show();
     }
 
     private fun getAllRacing(): ArrayList<WorkOutModel> {

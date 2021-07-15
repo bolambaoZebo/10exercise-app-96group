@@ -19,6 +19,13 @@
 
     </string-array>
 
+    <integer-array name="pop_random_">
+        <item>@drawable/pop1</item>
+        <item>@drawable/pop2</item>
+        <item>@drawable/pop3</item>
+        <item>@drawable/pop4</item>
+    </integer-array>
+
     <integer-array name="array_contentimage">
         <item>@drawable/img8</item>
         <item>@drawable/img13</item>
